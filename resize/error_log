@@ -1,0 +1,2 @@
+[21-Jan-2014 23:45:44 UTC] PHP Warning:  fopen(./cache/timthumb_int_5da982bcefa48ee51ac8a7438788f477.timthumb.txt): failed to open stream: No such file or directory in /home/nuwaved/public_html/completemarine/resize/timthumb.php on line 1020
+[07-Feb-2014 19:39:56 UTC] PHP Warning:  fopen(./cache/timthumb_int_2431f3235a3c35946e05cc7bbcff4b2d.timthumb.txt): failed to open stream: No such file or directory in /home/nuwaved/public_html/completemarine/resize/timthumb.php on line 1020

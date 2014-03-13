@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !^/(resize) [NC]
+RewriteRule . /index.php [L]
+RewriteRule ^resize/(.*)x(.*)/r/(.*) resize/timthumb.php?src=/$3&h=$2&w=$1&zc=1
+RewriteRule ^resize/w/(.*)/r/(.*) resize/timthumb.php?src=/$2&w=$1&zc=1
+RewriteRule ^resize/h/(.*)/r/(.*) resize/timthumb.php?src=/$2&h=$1&zc=1
+</IfModule>
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress

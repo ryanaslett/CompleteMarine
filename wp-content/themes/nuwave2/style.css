@@ -1,0 +1,250 @@
+/*------------------------------
+Theme Name: NuWave Custom Theme
+Theme URI: http://nuwavecommere.com
+Author: Christopher Moore
+Author URI: http://nuwavecommerce.com
+Description: Custom Design created by the NuWave Commerce Design and Development Team.
+Version: 1.0
+------------------------------*/
+
+
+/*
+ * HTML 5 Styles and reset
+ */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100%; }
+body { margin: 0; font-size: 1em; line-height: 1.4; }
+
+/*
+|---------------------------------------------------------------------
+| Main Styles
+|---------------------------------------------------------------------
+*/
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+    src: url('fonts/BebasNeue-webfont.eot');
+    src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/BebasNeue-webfont.woff') format('woff'),
+         url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body { 
+	height: 100%; width: 100%; color: #444; background: #F9F9F9;
+	font: 13px/18px "Open Sans","Helvetica Neue",Arial, sans-serif; line-height: 1.4em; -webkit-font-smoothing:antialiased;
+}
+body.home { background: url(images/mainBg2.jpg) no-repeat 50% 0; background-size: cover; } 
+body.home { background: url(images/bayliner-2.jpg) no-repeat 50% 0; background-size: cover; }
+body.home { background: url(images/bayliner-3.jpg) no-repeat 50% 0; background-size: cover; }
+body.home { background: url(images/bayliner-1.jpg) no-repeat 50% 0; background-size: cover; }
+body.home { background: url(images/main-bg.jpg) no-repeat 50% 0; background-size: cover; }
+h1,h2,h3,h4,h5,h6 { 
+	font-family: "BebasNeueRegular", Arial, sans-serif; line-height: 1.4em; font-weight: normal; margin: 0 0 .5em; color: #777;
+	border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+h1 { font-size: 80px; }
+h2 { font-size: 70px; }
+h3 { font-size: 32px; }
+h4 { font-size: 24px; }
+h5 { font-size: 18px; }
+h6 { font-size: 14px; }
+p { margin: 0 0 1em; }
+a {
+	color: #4E74B2; font-weight: 400;
+	text-decoration: none;
+	-webkit-transition: all 200ms ease-in;
+	-moz-transition: all 200ms ease-in;
+	transition: all 200ms ease-in;
+}
+img { display: block; border: none; }
+
+.btn { 
+	display: block; background: #7EA5E4; padding: 10px; text-align: center; color: #FFF; text-align: center; 
+	font-size: 12px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;
+}
+.hide { display: none; }
+.replace { display: block; text-indent: -9999px; font-size: 0px; line-height: 0px; }
+.no-list { margin: 0; padding: 0; list-style: none; }
+.bebas { font-family: "BebasNeueRegular", Arial; }
+.no-list.clearfix li { float: left; }
+.alignleft, .pull-left { float: left; }
+.alignright, .pull-right { float: right; }
+.aligncenter { display: block; margin: 0 auto; }
+
+.wrapper { width: 960px; margin: 0 auto; position: relative; }
+
+.clear { clear: both; }
+.clearfix { *zoom: 1; }
+.clearfix:before,
+.clearfix:after { display: table; content: ""; }
+.clearfix:after { clear: both; }
+
+.cols { margin-left: -20px; *zoom: 1; }
+.cols:before,
+.cols:after { display: table; line-height: 0; content: ""; }
+.cols:after { clear: both; }
+
+header { height: 80px; background: #FFF; border-bottom: 3px solid #FFF; box-shadow: 0 2px 8px rgba(0,0,0,0.8); }
+header h1 { margin: 0 60px 0 0; float: left; padding-top: 5px; }
+header h1 a { height: 70px; width: 153px; background: url(images/logo3.jpg) no-repeat; }
+
+#menu { list-style: none; padding: 0; margin: 0; }
+#menu li { padding: 21px 0; }
+#menu li a { 
+	font-family: 'BebasRegular', Arial; font-size: 14px; color: #4E74B2; display: block; padding: 10px 20px; 
+	border-right: 1px solid rgba(0,0,0,0.1);
+}
+
+#social-media { margin: 0; padding-top: 25px; }
+#social-media li { float: left; margin-right: 10px; }
+#social-media li a { height: 30px; width: 30px; background: url(images/social-icons.png) no-repeat 0 0 #4E74B2; border-radius: 50%; }
+#social-media li a.facebook { background-position: 11px 7px; }
+#social-media li a.twitter { background-position: -40px 7px; }
+#social-media li a.pintrest { background-position: -89px 5px; }
+#social-media li a.linkedin { background-position: -135px 6px; }
+#social-media li a.blog { background-position: -175px 5px; }
+#social-media li a:hover { background-color: #FFF; }
+#social-media li a.facebook:hover { background-position: 11px -27px; }
+#social-media li a.twitter:hover { background-position: -40px -28px; }
+#social-media li a.pintrest:hover { background-position: -89px -31px; }
+#social-media li a.linkedin:hover { background-position: -135px -28px; }
+#social-media li a.blog:hover { background-position: -175px -28px; }
+
+#page-title { padding: 100px 0; background: url(images/main-bg-2.jpg) no-repeat 50% 80%; background-size: cover; background-position: fixed; }
+#page-title h2 { margin: 0 0 10px; color: #FFF; text-shadow: 0 1px 3px rgba(0,0,0,0.5); }
+#page-title h3 { 
+	color: #FFF; text-shadow: 0 1px 3px rgba(0,0,0,0.3); font-family: "Open Sans", "Helvetica"; font-size: 22px; 
+	max-width: 330px;
+}
+
+#main { padding: 40px 0; line-height: 1.6em; box-shadow: 0 0 8px rgba(0,0,0,0.4); }
+
+#block { float: left; width: 630px; }
+#block h1,
+#block h2,
+#block h3,
+#block h4,
+#block h5,
+#block h6 { color: #4E74B2; text-shadow: 0 1px 3px rgba(0,0,0,0.15); }
+
+#block .item-details li { padding: 10px 0; border-top: 1px dashed rgba(0,0,0,0.05); font-size: 18px; }
+#block .item-details li span { font-weight: bold; }
+#block .item-details li:first-child { border-top: none; }
+
+#gallery { margin: 0 0 30px; }
+.rsDefault, .rsDefault .rsOverflow, .rsDefault .rsSlide, .rsDefault .rsVideoFrameHolder, .rsDefault .rsThumbs {
+	background: #F9F9F9;
+}
+.rsDefault .rsBullets { display: none; }
+
+#sidebar { float: right; width: 270px; padding-left: 30px; border-left: 1px solid rgba(0,0,0,0.05); }
+#sidebar h5 { border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 5px; }
+#sidebar .sb-inventory img { box-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+#sidebar .sb-inventory h5 { color: #4E74B2; border-bottom: none; margin: 10px 0 0; }
+#sidebar .sb-inventory p { margin: 0 0 5px; }
+#sidebar .phone { font-weight: bold; }
+
+.footer-top { 
+	background: url(images/footer-bg-light.jpg) no-repeat 50% 20%; background-size: cover; min-height: 200px; 
+	border-top: 1px solid rgba(0,0,0,0.05); padding: 30px 0;
+}
+.footer-top h3 { color: #777; text-shadow: 0 1px 3px rgba(0,0,0,0.3); letter-spacing: 1px; }
+.footer-top .col.left { float: left; width: 600px; }
+.footer-top .col.right { float: right; width: 300px; }
+
+.footer-top .used-boats { background: #FFF; box-shadow: 0 1px 3px rgba(0,0,0,0.5); margin-left: 30px; }
+.footer-top .used-boats h5 { margin: 0; padding: 5px 10px; text-align: center; }
+.footer-top .used-boats p a { 
+	background: #7EA5E4; color: #FFF; font-weight: bold; font-size: 12px; text-align: center; display: block; 
+	padding: 8px 10px;
+}
+
+footer { height: 60px; background: rgba(255,255,255,0.9); line-height: 60px; }
+.home footer { width: 100%; box-shadow: 0 0 7px rgba(35,41,62,0.7); }
+footer p { margin: 0; }
+footer .nuwave { font-family: Georgia, serif; font-style: italic; font-size: 14px; }
+footer .nuwave span { color: #777; }
+
+/*
+|---------------------------------------------------------------------
+| Homepage Styles
+|---------------------------------------------------------------------
+*/
+
+#hero { color: #FFF; padding-top: 125px; }
+#hero .welcome { width: 284px; height: 53px; background: url(images/welcome-to.png) no-repeat; margin: 0 0 20px; visibility: hidden; }
+#hero .cm { width: 898px; height: 147px; background: url(images/complete-marine.png) no-repeat; margin: 0 0 20px; visibility: hidden; }
+#hero p { width: 650px; font-size: 14px; color: #333; line-height: 1.6em; visibility: hidden; }
+
+#quicklinks { margin-left: -30px; }
+#quicklinks li { width: 300px; margin: 0 0 30px 30px; }
+#quicklinks li a { width: 300px; height: 113px; border-radius: 3px; box-shadow: 0 2px 8px #000; }
+#quicklinks li a.yamaha { background: url(images/link-yamaha.png) no-repeat 0 0; }
+#quicklinks li a.bayliner { background: url(images/link-bayliner.png) no-repeat 0 0; }
+#quicklinks li a.lowe { background: url(images/link-lowe.png) no-repeat 0 0; }
+#quicklinks li a.triton { background: url(images/link-triton.png) no-repeat 0 0; }
+#quicklinks li a.used { background: url(images/link-waverunners.png) no-repeat 0 0; }
+#quicklinks li a.skeeter { background: url(images/link-skeeter.png) no-repeat 0 0; }
+#quicklinks li a:hover { background-position: 0 100%; }
+
+a.usedboats { 
+	position: absolute; top: 30px; right: 0; width: 300px; height: 115px; background: url(images/used-boats.jpg); 
+	border-radius: 3px; box-shadow: 0 2px 8px #000;
+}
+
+/*
+|---------------------------------------------------------------------
+| Inventory Styles
+|---------------------------------------------------------------------
+*/
+#cat-list { margin: 0 0 20px; }
+#cat-list li { padding: 5px 0; border-top: 1px dashed rgba(0,0,0,0.05); }
+#cat-list li:first-child { border-top: none; padding-top: 0; }
+#cat-list li a { display: block; font-weight: bold; text-transform: uppercase; font-size: 12px; }
+#cat-list li a:hover { color: #314A73; }
+
+#inventory .item { border-top: 1px dashed rgba(0,0,0,0.05); padding: 20px 0; }
+#inventory .item:first-child { border-top: none; padding-top: 20px; }
+#inventory .item .content { margin-left: 270px; }
+#inventory .item img { box-shadow: 0 1px 3px rgba(0,0,0,0.4); }
+#inventory .item .item-details li { width: 33%; border-left: 1px solid rgba(0,0,0,0.05); text-align: center; }
+#inventory .item .item-details li:first-child { border-left: none; }
+#inventory .item .item-details h6 { 
+	font-family: "Open Sans", serif; font-size: 20px; border-bottom: none; text-shadow: none;
+}
+#inventory .item .item-details p { text-transform: uppercase; font-weight: bold; color: #777; font-size: 12px; }
+
+/*
+|---------------------------------------------------------------------
+| Form Styles
+|---------------------------------------------------------------------
+*/
+.gform_wrapper ul { list-style: none; padding: 0; margin: 20px 0; }
+.gform_wrapper ul li { border-top: 1px dashed rgba(0,0,0,0.05); padding: 10px 0; }
+.gform_wrapper ul li:first-child { padding-top: 0; border-top: none; }
+.gform_wrapper label { font-weight: bold; text-transform: uppercase; font-size: 12px; }
+.gform_wrapper input[type=text],
+.gform_wrapper textarea { padding: 5px; border: 1px solid #EFEFEF; width: 100%; box-sizing: border-box; }
+
+/*
+|---------------------------------------------------------------------
+| Video Styles
+|---------------------------------------------------------------------
+*/
+#vid-list .video .player iframe { box-shadow: 0 1px 5px rgba(0,0,0,0.6); } 
+
+/*
+|---------------------------------------------------------------------
+| IE Fixes
+|---------------------------------------------------------------------
+*/
+
+.lte8 #quicklinks li a:hover > span { display: none; }
